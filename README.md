@@ -36,6 +36,9 @@ portfolio-hub/
 │   └── 02-classificacao-iris-ml/
 ├── projetos-pessoais/                  # Projetos pessoais
 │   └── 03-dashboard-covid-visualizacao/
+├── slides/                             # Apresentação interativa em HTML
+│   ├── index.html
+│   └── slides.css
 ├── docs/                               # Documentação geral
 │   ├── apresentacao.md
 │   └── roteiro-video.md
@@ -43,6 +46,12 @@ portfolio-hub/
 ├── LICENSE
 └── .gitignore
 ```
+
+### Apresentação interativa
+
+Veja a apresentação completa do repositório em formato slides navegáveis:
+
+**[`ucazin.github.io/portfolio-hub/slides/`](https://ucazin.github.io/portfolio-hub/slides/)**
 
 ## Projetos em Destaque
 

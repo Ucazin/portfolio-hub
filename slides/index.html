@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>PortfolioHUB · Apresentação · Lucca Mariz</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css" />
+  <link rel="stylesheet" href="slides.css" />
+</head>
+<body>
+
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- ====================================================
+           SLIDE 1 · CAPA
+           ==================================================== -->
+      <section class="capa">
+        <p class="capa__tag">// portfolioHUB · v1.0.0</p>
+        <h1 class="capa__titulo">
+          <span class="grad">Portfolio</span><span>HUB</span>
+        </h1>
+        <p class="capa__sub">
+          Repositório de projetos acadêmicos e pessoais com versionamento profissional
+        </p>
+        <p class="capa__autor">
+          <strong>Lucca Mariz</strong> · Ciência de Dados e Machine Learning · CEUB 2026
+        </p>
+        <p class="capa__hint">
+          <kbd>→</kbd> próximo &nbsp;·&nbsp; <kbd>Esc</kbd> visão geral
+        </p>
+      </section>
+
+      <!-- ====================================================
+           SLIDE 2 · QUEM SOU EU
+           ==================================================== -->
+      <section>
+        <h2><span class="grad">Olá</span>, sou Lucca</h2>
+        <ul class="lista">
+          <li>Graduando em <strong>Ciência de Dados e Machine Learning</strong></li>
+          <li>Centro Universitário de Brasília (<strong>CEUB</strong>), Asa Norte</li>
+          <li>Foco em análise de dados, ML supervisionado e visualização web</li>
+          <li>Construindo um portfólio público versionado para o mercado</li>
+        </ul>
+        <p class="contato">
+          <span class="badge">github.com/Ucazin</span>
+          <span class="badge">linkedin.com/in/lucca-mariz</span>
+        </p>
+      </section>
+
+      <!-- ====================================================
+           SLIDE 3 · POR QUE ESTE REPOSITÓRIO
+           ==================================================== -->
+      <section>
+        <h2 class="topico"><span class="num">01</span> Por que o PortfolioHUB existe</h2>
+        <ul class="lista">
+          <li>Aplicar <strong>boas práticas de versionamento</strong> com Git e GitHub</li>
+          <li><strong>Demonstrar</strong> projetos acadêmicos e pessoais publicamente</li>
+          <li><strong>Documentar</strong> cada projeto com READMEs formatados</li>
+          <li><strong>Publicar</strong> uma vitrine viva via GitHub Pages</li>
+          <li><strong>Integrar</strong> com LinkedIn para fortalecer o perfil profissional</li>
+        </ul>
+      </section>
+
+      <!-- ====================================================
+           SLIDE 4 · PLANEJAMENTO (item 1)
+           ==================================================== -->
+      <section>
+        <h2 class="topico"><span class="num">02</span> Planejamento e estrutura</h2>
+        <pre class="arvore"><code>portfolio-hub/
+├── index.html              ← Página GitHub Pages
+├── assets/                 ← CSS, JS e imagens
+├── projetos-academicos/    ← Projetos da graduação
+│   ├── 01-analise-exploratoria-vendas/
+│   └── 02-classificacao-iris-ml/
+├── projetos-pessoais/      ← Projetos pessoais
+│   └── 03-dashboard-covid-visualizacao/
+├── docs/                   ← Apresentação e roteiro
+├── slides/                 ← Esta apresentação
+├── README.md
+├── LICENSE
+└── .gitignore</code></pre>
+      </section>
+
+      <!-- ====================================================
+           SLIDE 5 · VERSIONAMENTO (item 2)
+           ==================================================== -->
+      <section>
+        <h2 class="topico"><span class="num">03</span> Versionamento com Git</h2>
+        <p>Histórico semântico em <strong>Conventional Commits</strong> e tag <code class="hl">v1.0.0</code> publicada:</p>
+        <pre class="commit-log"><code>v1.0.0  docs: add presentation and video script
+        feat: add main GitHub Pages site (dark tech)
+        feat: add personal project 03 — COVID dashboard
+        feat: add academic project 02 — Iris ML
+        feat: add academic project 01 — sales EDA
+        docs: add main README
+        chore: initial commit · license · gitignore</code></pre>
+      </section>
+
+      <!-- ====================================================
+           SLIDE 6 · DOCUMENTAÇÃO (item 3)
+           ==================================================== -->
+      <section>
+        <h2 class="topico"><span class="num">04</span> Organização e documentação</h2>
+        <ul class="lista">
+          <li>Uma <strong>pasta por projeto</strong> com escopo isolado</li>
+          <li><code class="hl">README.md</code> em cada projeto, com:
+            <ul>
+              <li>Objetivo e conceitos aplicados</li>
+              <li>Instruções de execução passo a passo</li>
+              <li>Tabela de tecnologias com versões</li>
+              <li>Aprendizados consolidados</li>
+            </ul>
+          </li>
+          <li><code class="hl">README.md</code> raiz como índice geral + badges</li>
+          <li><code class="hl">LICENSE</code> MIT e <code class="hl">.gitignore</code> padronizado</li>
+        </ul>
+      </section>
+
+      <!-- ====================================================
+           SLIDE 7 · PROJETO 1
+           ==================================================== -->
+      <section>
+        <h2 class="proj"><span class="num">P1</span> Análise Exploratória de Vendas</h2>
+        <div class="duas">
+          <div>
+            <p class="kicker">Acadêmico · Python</p>
+            <ul class="lista">
+              <li>EDA completa de dataset de vendas</li>
+              <li>Estatística descritiva + agregação</li>
+              <li>3 gráficos: categoria, top produtos, mensal</li>
+            </ul>
+          </div>
+          <div>
+            <p class="kicker">Stack</p>
+            <ul class="tags">
+              <li>Python 3.10+</li>
+              <li>Pandas</li>
+              <li>NumPy</li>
+              <li>Matplotlib</li>
+              <li>Seaborn</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================
+           SLIDE 8 · PROJETO 2
+           ==================================================== -->
+      <section>
+        <h2 class="proj"><span class="num">P2</span> Classificação Iris com ML</h2>
+        <div class="duas">
+          <div>
+            <p class="kicker">Acadêmico · Machine Learning</p>
+            <ul class="lista">
+              <li>Pipeline supervisionado completo</li>
+              <li>Comparação de 3 modelos</li>
+              <li>Avaliação por matriz de confusão</li>
+            </ul>
+          </div>
+          <div>
+            <p class="kicker">Modelos comparados</p>
+            <ul class="tags">
+              <li>KNN (k=5)</li>
+              <li>Regressão Logística</li>
+              <li>Random Forest</li>
+            </ul>
+            <p class="kicker">Acurácia esperada: <strong>95–100%</strong></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================
+           SLIDE 9 · PROJETO 3
+           ==================================================== -->
+      <section>
+        <h2 class="proj"><span class="num">P3</span> Dashboard COVID Interativo</h2>
+        <div class="duas">
+          <div>
+            <p class="kicker">Pessoal · Visualização Web</p>
+            <ul class="lista">
+              <li>Dashboard 100% estático</li>
+              <li>4 KPIs em cards interativos</li>
+              <li>3 tipos de gráfico (linha, barra, doughnut)</li>
+              <li>Responsivo para mobile, tablet e desktop</li>
+            </ul>
+          </div>
+          <div>
+            <p class="kicker">Stack</p>
+            <ul class="tags">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript ES6+</li>
+              <li>Chart.js 4</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================
+           SLIDE 10 · STACK
+           ==================================================== -->
+      <section>
+        <h2 class="topico">Tecnologias que utilizo</h2>
+        <div class="stack-grid">
+          <div>
+            <h3>Linguagens</h3>
+            <ul class="tags">
+              <li>Python</li><li>JavaScript</li><li>HTML</li><li>CSS</li><li>SQL</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Dados &amp; ML</h3>
+            <ul class="tags">
+              <li>Pandas</li><li>NumPy</li><li>scikit-learn</li><li>Matplotlib</li><li>Seaborn</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Web</h3>
+            <ul class="tags">
+              <li>HTML5</li><li>CSS3</li><li>Chart.js</li><li>GitHub Pages</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Ferramentas</h3>
+            <ul class="tags">
+              <li>Git</li><li>GitHub</li><li>VS Code</li><li>Jupyter</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================
+           SLIDE 11 · GITHUB PAGES (item 4)
+           ==================================================== -->
+      <section>
+        <h2 class="topico"><span class="num">05</span> Publicação · GitHub Pages</h2>
+        <ul class="lista">
+          <li>Vitrine publicada em <code class="hl">ucazin.github.io/portfolio-hub</code></li>
+          <li><strong>Tema dark tech</strong>, mobile-first, sem dependências</li>
+          <li>Carregamento rápido — apenas HTML, CSS e JS puro</li>
+          <li>Esta apresentação também é parte do GitHub Pages (você está nela agora!)</li>
+        </ul>
+        <p class="cta">
+          <a href="../index.html">→ ir para a página principal</a>
+        </p>
+      </section>
+
+      <!-- ====================================================
+           SLIDE 12 · LINKEDIN (item 5)
+           ==================================================== -->
+      <section>
+        <h2 class="topico"><span class="num">06</span> Integração com LinkedIn</h2>
+        <ul class="lista">
+          <li>Repositório <strong>público</strong> no GitHub</li>
+          <li>Adicionado na seção <strong>Projetos</strong> do meu perfil LinkedIn</li>
+          <li>Visível para recrutadores e comunidade acadêmica</li>
+          <li>Link curto e direto para a vitrine publicada</li>
+        </ul>
+        <p class="cta">
+          <a href="https://www.linkedin.com/in/lucca-mariz/" target="_blank" rel="noopener">
+            → linkedin.com/in/lucca-mariz
+          </a>
+        </p>
+      </section>
+
+      <!-- ====================================================
+           SLIDE 13 · APRESENTAÇÃO (item 6)
+           ==================================================== -->
+      <section>
+        <h2 class="topico"><span class="num">07</span> Apresentação no YouTube</h2>
+        <ul class="lista">
+          <li>Vídeo de <strong>5 minutos</strong> apresentando o repositório</li>
+          <li>Cobre: estrutura, projetos, GitHub Pages, LinkedIn e versionamento</li>
+          <li>Roteiro completo em <code class="hl">docs/roteiro-video.md</code></li>
+          <li>Publicado como <strong>"Não listado"</strong> no canal</li>
+        </ul>
+      </section>
+
+      <!-- ====================================================
+           SLIDE 14 · PRÓXIMOS PASSOS
+           ==================================================== -->
+      <section>
+        <h2 class="topico">Próximos passos</h2>
+        <ul class="lista">
+          <li>Adicionar projetos das próximas disciplinas</li>
+          <li>Implementar workflow de CI com GitHub Actions</li>
+          <li>Expandir o dashboard COVID com <strong>dados reais</strong> (open data)</li>
+          <li>Estudos em <strong>Deep Learning</strong> e <strong>MLOps</strong></li>
+          <li>Tag <code class="hl">v1.1.0</code> com próximas entregas</li>
+        </ul>
+      </section>
+
+      <!-- ====================================================
+           SLIDE 15 · OBRIGADO
+           ==================================================== -->
+      <section class="final">
+        <h1 class="final__titulo"><span class="grad">Obrigado!</span></h1>
+        <p class="final__sub">PortfolioHUB · v1.0.0 · MIT License</p>
+
+        <div class="final__links">
+          <a href="https://github.com/Ucazin/portfolio-hub" target="_blank" rel="noopener">
+            github.com/Ucazin/portfolio-hub
+          </a>
+          <a href="https://ucazin.github.io/portfolio-hub/" target="_blank" rel="noopener">
+            ucazin.github.io/portfolio-hub
+          </a>
+          <a href="mailto:luccamariz01@gmail.com">
+            luccamariz01@gmail.com
+          </a>
+        </div>
+
+        <p class="final__assinatura">Lucca Mariz · CEUB · Maio de 2026</p>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      transition: 'slide',
+      slideNumber: 'c/t',
+      controls: true,
+      progress: true,
+      center: false,
+      width:  1280,
+      height: 800,
+      margin: 0.06,
+      minScale: 0.2,
+      maxScale: 1.8,
+    });
+  </script>
+</body>
+</html>
