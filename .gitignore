@@ -55,3 +55,7 @@ tmp/
 temp/
 *.tmp
 *.bak
+
+# Meta-informação da sessão (não faz parte da entrega)
+contexto/
+PROXIMOS-PASSOS.md
