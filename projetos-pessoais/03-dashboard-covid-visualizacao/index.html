@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard COVID — Visualização Interativa</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="../../index.html">
+        <span class="brand__dot"></span>
+        <span class="brand__name">PortfolioHUB</span>
+      </a>
+      <a class="topbar__back" href="../../index.html">&larr; Voltar ao portfólio</a>
+    </div>
+  </header>
+
+  <main class="container main">
+    <section class="hero">
+      <h1 class="hero__title">Dashboard COVID-19</h1>
+      <p class="hero__subtitle">
+        Visualização interativa de dados <strong>fictícios</strong> de COVID-19,
+        construída com HTML, CSS, JavaScript puro e Chart.js.
+      </p>
+    </section>
+
+    <section class="cards" aria-label="Indicadores principais">
+      <div class="card">
+        <span class="card__label">Total de casos</span>
+        <span class="card__value" id="kpi-casos">—</span>
+      </div>
+      <div class="card card--danger">
+        <span class="card__label">Óbitos</span>
+        <span class="card__value" id="kpi-obitos">—</span>
+      </div>
+      <div class="card card--success">
+        <span class="card__label">Recuperados</span>
+        <span class="card__value" id="kpi-recuperados">—</span>
+      </div>
+      <div class="card card--warning">
+        <span class="card__label">Casos ativos</span>
+        <span class="card__value" id="kpi-ativos">—</span>
+      </div>
+    </section>
+
+    <section class="grid-graficos">
+      <article class="painel painel--wide">
+        <h2 class="painel__titulo">Evolução temporal de casos</h2>
+        <div class="painel__canvas"><canvas id="grafico-linha"></canvas></div>
+      </article>
+
+      <article class="painel">
+        <h2 class="painel__titulo">Casos por região</h2>
+        <div class="painel__canvas"><canvas id="grafico-barras"></canvas></div>
+      </article>
+
+      <article class="painel">
+        <h2 class="painel__titulo">Distribuição</h2>
+        <div class="painel__canvas"><canvas id="grafico-doughnut"></canvas></div>
+      </article>
+    </section>
+
+    <footer class="rodape">
+      <p>
+        Dados fictícios · Projeto pessoal de Lucca Mariz ·
+        <a href="https://github.com/Ucazin" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </footer>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
