@@ -1,0 +1,19 @@
+# CODEOWNERS — define quem revisa o quê neste repositório.
+# Sintaxe: <padrão de arquivo>  <@responsável>
+# Documentação: https://docs.github.com/articles/about-code-owners
+
+# Dono padrão de todo o repositório.
+# Qualquer Pull Request solicita automaticamente a revisão do @Ucazin.
+*                       @Ucazin
+
+# Documentação e governança
+/docs/                  @Ucazin
+*.md                    @Ucazin
+
+# Configuração de infraestrutura, CI e segurança
+/.github/               @Ucazin
+/.gitignore             @Ucazin
+
+# Projetos
+/projetos-academicos/   @Ucazin
+/projetos-pessoais/     @Ucazin
