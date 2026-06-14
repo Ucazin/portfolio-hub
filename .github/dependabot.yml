@@ -1,5 +1,12 @@
 # Dependabot — mantém dependências atualizadas e seguras automaticamente.
 # Documentação: https://docs.github.com/code-security/dependabot
+#
+# Estratégia adotada:
+#   - GitHub Actions: recebe atualizações de versão (baixo risco).
+#   - Python (pip): recebe APENAS atualizações de SEGURANÇA. O limite 0 desliga
+#     os bumps proativos de versão (que poderiam trazer versões major capazes de
+#     quebrar os projetos acadêmicos), mas os alertas e correções de segurança
+#     continuam ativos.
 version: 2
 updates:
   # Atualiza as Actions usadas no pipeline de CI
@@ -11,20 +18,22 @@ updates:
       prefix: "ci"
     labels: ["dependencies", "ci"]
 
-  # Monitora as dependências Python do projeto 01 (análise exploratória)
+  # Projeto 01 (análise exploratória) — só atualizações de segurança
   - package-ecosystem: "pip"
     directory: "/projetos-academicos/01-analise-exploratoria-vendas"
     schedule:
       interval: "weekly"
+    open-pull-requests-limit: 0
     commit-message:
       prefix: "chore"
-    labels: ["dependencies", "python"]
+    labels: ["dependencies", "python", "security"]
 
-  # Monitora as dependências Python do projeto 02 (classificação Iris)
+  # Projeto 02 (classificação Iris) — só atualizações de segurança
   - package-ecosystem: "pip"
     directory: "/projetos-academicos/02-classificacao-iris-ml"
     schedule:
       interval: "weekly"
+    open-pull-requests-limit: 0
     commit-message:
       prefix: "chore"
-    labels: ["dependencies", "python"]
+    labels: ["dependencies", "python", "security"]

@@ -328,8 +328,10 @@ governança, segurança e CI foi adicionada por meio de uma branch
 `feat/implantacao-producao` e de um Pull Request real, revisado e mergeado na
 `main` protegida.
 
-[PREENCHER: número e link do Pull Request criado.
-Ex.: "Pull Request #1 — https://github.com/Ucazin/portfolio-hub/pull/1"]
+**Pull Request #1** — https://github.com/Ucazin/portfolio-hub/pull/1
+(branch `feat/implantacao-producao`, CI verde, mergeado na `main` protegida).
+Um segundo PR (`feat/ajuste-dependabot-e-links`) ajustou o Dependabot e preencheu
+estes links, reforçando que o fluxo de colaboração é repetível.
 
 [📷 COLAR PRINT: a página do **Pull Request** mostrando os checks verdes do CI e
 o merge realizado]
@@ -396,8 +398,7 @@ A produção é o **GitHub Pages**, que faz deploy automático da branch `main`:
 A implantação foi marcada com a tag/Release **`v2.0.0`**, sinalizando a entrada
 em produção (mudança MAJOR em relação à `v1.0.0` da entrega intermediária).
 
-[PREENCHER: link da Release v2.0.0.
-Ex.: "https://github.com/Ucazin/portfolio-hub/releases/tag/v2.0.0"]
+**Release v2.0.0** — https://github.com/Ucazin/portfolio-hub/releases/tag/v2.0.0
 
 [📷 COLAR PRINT: a página da **Release v2.0.0** no GitHub]
 
@@ -435,8 +436,8 @@ Ex.: "https://github.com/Ucazin/portfolio-hub/releases/tag/v2.0.0"]
 |---------|------|
 | Repositório | https://github.com/Ucazin/portfolio-hub |
 | Produção (GitHub Pages) | https://ucazin.github.io/portfolio-hub/ |
-| Pull Request da implantação | [PREENCHER: link do PR] |
-| Release v2.0.0 | [PREENCHER: link da release] |
+| Pull Request da implantação | https://github.com/Ucazin/portfolio-hub/pull/1 |
+| Release v2.0.0 | https://github.com/Ucazin/portfolio-hub/releases/tag/v2.0.0 |
 | Vídeo no YouTube | [PREENCHER: link do vídeo] |
 | LinkedIn | https://www.linkedin.com/in/lucca-mariz/ |
 
