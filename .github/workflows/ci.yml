@@ -1,0 +1,105 @@
+name: CI
+
+# Pipeline de integração contínua do PortfolioHUB.
+# Roda a cada push na main e em todo Pull Request, garantindo que a estrutura
+# e os arquivos HTML estejam íntegros antes de chegarem à produção (GitHub Pages).
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  estrutura:
+    name: Validar estrutura
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Verificar arquivos e pastas obrigatórios
+        shell: bash
+        run: |
+          set -e
+          obrigatorios=(
+            "README.md"
+            "LICENSE"
+            ".gitignore"
+            "index.html"
+            "CONTRIBUTING.md"
+            "SECURITY.md"
+            "CODE_OF_CONDUCT.md"
+            "projetos-academicos"
+            "projetos-pessoais"
+            "docs"
+          )
+          falhou=0
+          for item in "${obrigatorios[@]}"; do
+            if [ -e "$item" ]; then
+              echo "OK    -> $item"
+            else
+              echo "FALTA -> $item"
+              falhou=1
+            fi
+          done
+          if [ "$falhou" -ne 0 ]; then
+            echo "::error::Estrutura do repositório incompleta."
+            exit 1
+          fi
+          echo "Estrutura validada com sucesso."
+
+  html:
+    name: Validar HTML
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Validar sintaxe básica dos arquivos HTML
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import sys, glob
+          from html.parser import HTMLParser
+
+          class Validador(HTMLParser):
+              def __init__(self):
+                  super().__init__()
+                  self.erros = []
+              def error(self, message):
+                  self.erros.append(message)
+
+          arquivos = sorted(glob.glob("**/*.html", recursive=True))
+          if not arquivos:
+              print("Nenhum arquivo HTML encontrado — nada a validar.")
+              sys.exit(0)
+
+          falhou = False
+          for caminho in arquivos:
+              with open(caminho, encoding="utf-8") as f:
+                  conteudo = f.read()
+              parser = Validador()
+              try:
+                  parser.feed(conteudo)
+                  parser.close()
+              except Exception as e:
+                  print(f"ERRO  -> {caminho}: {e}")
+                  falhou = True
+                  continue
+              baixo = conteudo.lower()
+              if "<html" in baixo and "</html>" not in baixo:
+                  print(f"ERRO  -> {caminho}: tag <html> sem fechamento")
+                  falhou = True
+              else:
+                  print(f"OK    -> {caminho}")
+
+          if falhou:
+              print("::error::Falha na validação de HTML.")
+              sys.exit(1)
+          print("Todos os arquivos HTML passaram na validação.")
+          PY

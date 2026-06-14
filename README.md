@@ -100,6 +100,24 @@ Este repositório segue versionamento semântico ([SemVer](https://semver.org/la
 
 Veja o histórico completo em [Releases](https://github.com/Ucazin/portfolio-hub/releases).
 
+## Governança, Colaboração e Segurança
+
+Este repositório segue boas práticas de governança e segurança, aplicadas na
+**Entrega Final — Implantação em Produção**:
+
+- **Fluxo de colaboração:** toda mudança passa por *branch* + *Pull Request* com
+  revisão obrigatória. Veja [`CONTRIBUTING.md`](CONTRIBUTING.md).
+- **Branch principal protegida:** push direto bloqueado, exige review e testes verdes.
+- **Integração contínua:** [GitHub Actions](.github/workflows/ci.yml) valida
+  estrutura e HTML a cada push e Pull Request.
+- **Segurança:** 2FA, branch protection, Dependabot e secret scanning. Política em
+  [`SECURITY.md`](SECURITY.md).
+- **Revisores definidos:** [`CODEOWNERS`](.github/CODEOWNERS).
+- **Código de conduta:** [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md).
+
+📄 A documentação completa da implantação está em
+[`docs/implantacao/`](docs/implantacao/DOCUMENTO-IMPLANTACAO.md).
+
 ## Contato
 
 - **Nome:** Lucca Coelho Mendes de Mariz Dantas Del Bosco

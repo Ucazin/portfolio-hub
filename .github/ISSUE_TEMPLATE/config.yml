@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Dúvidas gerais
+    url: https://github.com/Ucazin/portfolio-hub/discussions
+    about: Para perguntas e conversas, use as Discussions (se habilitadas).
+  - name: 🔐 Reportar vulnerabilidade de segurança
+    url: https://github.com/Ucazin/portfolio-hub/security/policy
+    about: Veja a política de segurança antes de reportar.
