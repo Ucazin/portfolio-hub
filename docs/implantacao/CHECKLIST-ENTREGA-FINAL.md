@@ -51,8 +51,8 @@
 - [ ] Colar os prints nos pontos `[📷 COLAR PRINT]` do documento.
 
 ### Conteúdo pessoal no documento (campos `[PREENCHER]`)
-- [ ] Link do Pull Request (Seção 4.2 e 6.2)
-- [ ] Link da Release v2.0.0 (Seção 5.4 e 6.2)
+- [x] ~~Link do Pull Request~~ — **já preenchido** (PR #1)
+- [x] ~~Link da Release v2.0.0~~ — **já preenchido**
 - [ ] Link do vídeo no YouTube (Seções 6.2 e 6.3)
 - [ ] Conclusão/aprendizados pessoais (Seção 6.4)
 - [ ] Comentários de “como usei a resposta do Gemini” (Seção 1.5)
