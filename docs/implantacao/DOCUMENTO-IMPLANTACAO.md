@@ -123,10 +123,12 @@ Esta é a terceira e última etapa de um trabalho em três fases:
 
 [📷 COLAR PRINT: resposta do Gemini ao Prompt 1 — plano de implantação]
 
-**Como usei a resposta:** [PREENCHER: escreva 2–3 linhas dizendo o que você
-aproveitou da resposta do Gemini — ex.: "o Gemini reforçou a importância de
-aplicar o princípio do menor privilégio e de exigir review nos PRs, o que adotei
-na seção 3 e 4".]
+**Como usei a resposta:** o plano que o Gemini devolveu confirmou a ordem das
+etapas que eu já tinha em mente e me fez priorizar dois pontos que eu não tinha
+detalhado: aplicar o **princípio do menor privilégio** ao dar acesso a
+colaboradores e **exigir revisão (review) nos Pull Requests** antes de qualquer
+merge na `main`. Levei essas duas recomendações direto para as Seções 3 e 4 deste
+documento.
 
 ---
 
@@ -451,10 +453,19 @@ implantação. O roteiro completo está em
 
 ### 6.4 Conclusão e aprendizados
 
-[PREENCHER: escreva 4–6 linhas com sua reflexão pessoal. Sugestões do que
-abordar: o que você aprendeu sobre implantação e governança no GitHub; como o
-Google Gemini ajudou em cada etapa; qual boa prática de segurança você achou
-mais importante; e quais são os próximos passos do PortfolioHUB.]
+Implantar o PortfolioHUB me mostrou que publicar um projeto é só uma parte do
+trabalho — o que separa um repositório amador de um profissional é a camada de
+**governança e segurança** ao redor dele. Aprendi na prática a proteger a branch
+principal, a exigir Pull Request com revisão antes de qualquer mudança chegar à
+produção, a configurar testes automáticos com GitHub Actions e a deixar o
+Dependabot cuidando das dependências. O **Google Gemini** funcionou como um
+"segundo par de olhos" em cada etapa: usei para validar o plano, conferir boas
+práticas de segurança e revisar se eu não estava esquecendo nada. Entre todas as
+práticas, a que achei mais importante foi a **branch protection com review
+obrigatório**, porque é ela que impede que um erro vá direto para o ar. Como
+próximos passos, pretendo adicionar os projetos das próximas disciplinas, evoluir
+o dashboard com dados reais e ampliar os testes do CI — tudo já registrado na
+[issue #12](https://github.com/Ucazin/portfolio-hub/issues/12) do repositório.
 
 > 🤖 **PROMPT GEMINI 6 — Revisão final**
 >

@@ -54,8 +54,8 @@
 - [x] ~~Link do Pull Request~~ — **já preenchido** (PR #1)
 - [x] ~~Link da Release v2.0.0~~ — **já preenchido**
 - [ ] Link do vídeo no YouTube (Seções 6.2 e 6.3)
-- [ ] Conclusão/aprendizados pessoais (Seção 6.4)
-- [ ] Comentários de “como usei a resposta do Gemini” (Seção 1.5)
+- [x] ~~Conclusão/aprendizados pessoais (Seção 6.4)~~ — **já escrito** (revise se quiser deixar com a sua voz)
+- [x] ~~Comentários de "como usei a resposta do Gemini" (Seção 1.5)~~ — **já escrito**
 
 ### Vídeo
 - [ ] Gravar o vídeo de 5 min seguindo `roteiro-video-final.md`
