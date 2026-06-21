@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout do código
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Verificar arquivos e pastas obrigatórios
         shell: bash
@@ -58,7 +58,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout do código
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Validar sintaxe básica dos arquivos HTML
         shell: bash
